@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Object Detection | Work</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="../favicon.ico?">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="../css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="../js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<h1 id="colorlib-logo"><a href="../index.html"><span style="font-size:45%;letter-spacing: 1.5px;text-transform:capitalize;">An Engineering Logbook</span><span>Sasa's</span><span>Kitchen</span></a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<a href="../about.html"><img src="../Sasa-Katsuhiro.jpg" width="77" height="104"></a>
+					<li><a href="../index.html">Home</a></li>
+					<li class="colorlib-active"><a href="../work.html">Work</a></li>
+					<li><a href="../about.html">About</a></li>
+					<li><a href="../expertise.html">Expertise</a></li>
+					<!--<li><a href="blog.html">Blog</a></li>-->
+					<li><a href="../contact.html">Contact</a></li>
+					<li><a href="../data/Sasa_Katsuhiro_(Aug2020).pdf" target="_blank">Curriculum Vitae</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="https://www.facebook.com/katsuhiro.sasagaki"><i class="icon-facebook2"></i></a></li>
+					<li><a href="https://twitter.com/ColoradoanPony"><i class="icon-twitter2"></i></a></li>
+					<li><a href="https://www.instagram.com/sasagackiee/"><i class="icon-instagram"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/sasa-co/"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+
+			<div class="colorlib-work">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
+							<span class="heading-meta">For 10 Major Electronic Components</span>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Realtime A.I. Object Detector</h2>
+							<p>SKILLS & KNOWLEDGE</p>
+							<ul>
+								<li>TensorFlow Object Detection API</li>
+								<li>Convolutional Neural Network</li>
+								<li>Data Augmentation</li>
+								<li>Python Coding</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 image-content">
+							<hr>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Convolutional Neural Network</h2>
+							<p>The challenge is to develop a practical trained CNN model that can deliver high detection accuracy 
+								in recognition of electronic components. Below shows the concept of CNN. </p>
+							<img class="img-responsive" src="images/AI-02.png" alt="Concept of CNN">
+							<p font style="font-size:10px"> Deshpande, A., 2016. A Beginner's Guide To Understanding Convolutional Neural
+								Networks. [online] Engineering at Forward | UCLA CS ‘19. Available at:
+								&lt;https://adeshpande3.github.io/A-Beginner%27s-Guide-To-UnderstandingConvolutional-Neural-Networks/&gt; [Accessed 20 June 2020].</p>
+							<br>
+							<hr>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">single shot multibox method</h2>
+							<p>The pre-trained model trained based on the Common Object in Context (COCO) dataset was used to reduce the total training time. 
+								The main training was conducted by TensorFlow framework using image data. 
+								The electronic components were classified in ten classes and more than 2,000 images were used as shown below.
+							</p>
+							<img class="img-responsive" src="images/AI-03.png" alt="Concept of Single Shot Multibox Method">
+							<p font style="font-size:10px"> Y. Li, W. Hu, H. Dong, and X. Zhang, “Building Damage Detection 
+								from PostEvent Aerial Imagery Using Single Shot Multibox Detector,” <i>Applied Sciences</i>,
+								vol. 9, no. 6, p. 1128, 2019</p>
+							<img class="img-responsive" src="images/AI-04.png" alt="Number of Images Gathered for Each Class">
+							<br>
+							<hr>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Image Augmentation</h2>
+							<p>Image augmentations are performed in the training for each image of the data set. 
+								This makes randomly some changes on the input images, such as rotating, resizing, distorting color, 
+								and adjusting brightness and contrast. 
+							</p>
+							<img class="img-responsive" src="images/AI-05.png" alt="Example of Image Augmentation">
+							<br>
+							<hr>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Detection Accuracy Results (100%)</h2>
+							<p>Detection accuracy can be visualized by the webcam inference and be measured by a ratio of the number of 
+								objects correctly detected to the number of objects expected. Since it depends on the object size, 
+								100% detection can be achieved by bringing the webcam closer to the circuit board.
+							</p>
+							<img class="img-responsive" src="images/AI-06.png" alt="Onboard Webcam Inference">
+							<img class="img-responsive" src="images/AI-07.png" alt="Offboard Webcam Inference">
+							<br>
+							<hr>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Training Accuracy Results (83.5%)</h2>
+							<p>Training accuracy can be visualized by the TensorFlow evaluation script with some sample images. 
+								The accuracy value can be calculated as the Intersection of Union (IoU), 
+								which is a ratio of an over-rapped area between the detected and expected bounding boxes to the area of union between them. 
+								In short, the more over-rapped area and less area of union, the higher detection accuracy.
+							</p>
+							<img class="img-responsive" src="images/AI-08.png" alt="Webcam Inference">
+							<img class="img-responsive" src="images/AI-09.png" alt="Webcam Inference">
+							<img class="img-responsive" src="images/AI-10.png" alt="Webcam Inference">
+							
+							<br>
+							<hr>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Promo Movie</h2>
+							<p>Here is the webcam inference screen detecting some actual components on the circuit boards.</p>
+							<iframe allowfullscreen="allowfullscreen" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="394.27" height="221.5" type="text/html" 
+							src="https://www.youtube.com/embed/2EidKjRMz6k?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+							<div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode.com/es/</a></small></div>
+							<div><small><a href="http://tr3ndygirl.com/">ultimatewebtraffic</a></small></div></iframe>
+							<hr>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">See How You Create Your Own Model</h2>
+							
+							<a href="https://colab.research.google.com/drive/1xCJawXIK0oZAG5ED5VlhC0Zh27-K0i-3?usp=sharing" target="_blank"><img src="https://camo.githubusercontent.com/52feade06f2fecbf006889a904d221e6a730c194/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+							<p>If you want to make your own detector, see and check <a href="https://colab.research.google.com/drive/1xCJawXIK0oZAG5ED5VlhC0Zh27-K0i-3?usp=sharing" target="_blank">my Google Clab Note</a>, or<br>
+							check <a href="https://github.com/Sasagackie/Realtime-A.I.-Object-Detector/blob/master/Realtime_AI_Component_Detector.ipynb" target="_blank">my GitHub page</a> out.</p>
+							
+						</div>
+						<div class="col-md-4 sticky-parent">
+							<div id="sticky_item">
+								<div class="project-desc">
+									<h2>Realtime A.I. Object Detector</h2>
+									<span><a href="#">June 2020</a>, <a href="#">Undergraduate Project</a></span>
+									<p>
+										The aim of the project is to develop a real-time object detector for major electronic components on circuit boards, 
+										trained by deep machine learning techniques based on the Convolutional Neural Network (CNN). 
+										My role is <b>to develop and train the neural network model including:
+										<ul>
+											<li>collecting images that can be used for the training</li>
+											<li>labelling components shown in the image</li>
+											<li>setting up TensorFlow environment on Google Colab</li>
+											<li>producing a Python code to train the model</li></b>
+										</ul>
+									</p>
+									<!--<p class="icon">
+										<span><a href="#"><i class="icon-share3"></i></a></span>
+										<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+										<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+									</p>-->
+									<p><a href="../data/ObjectDetection.pdf" target="_blank" class="btn btn-primary">Preview An A1 Poster</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="get-in-touch" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h2>Get in Touch!</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead">If you have any questions, please feel free to drop me a line.
+								if you don't get an answer immediately, I'll get back to you as soon as I can.</p>
+							<p><a href="https://sasagackie.github.io/contact.html" class="btn btn-primary btn-learn">Contact Sasa!</a></p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="../js/jquery.flexslider-min.js"></script>
+	<!-- Sticky Kit -->
+	<script src="../js/sticky-kit.min.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="../js/main.js"></script>
+
+	</body>
+</html>
+
