@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Object Detection | Work</title>
+	<title>Image Classification | Work</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -79,74 +79,66 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
-							<span class="heading-meta">For 10 Major Electronic Components</span>
-							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Realtime A.I. Object Detector</h2>
+							<span class="heading-meta">For An Early Plant Disease Detection</span>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Mobile Plant Disease Detector</h2>
 							<p>SKILLS & KNOWLEDGE</p>
 							<ul>
-								<li>TensorFlow Object Detection API</li>
+								<li>MATLAB Deep Learning Toolbox</li>
 								<li>Convolutional Neural Network</li>
-								<li>Data Augmentation</li>
-								<li>Python Coding</li>
+								<li>Residual Network (ResNet50)</li>
+								<li>MATLAB Mobile</li>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-8 image-content">
 							<hr>
-							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Convolutional Neural Network</h2>
-							<p>The challenge is to develop a practical trained CNN model that can deliver high detection accuracy 
-								in recognition of electronic components. Below shows the concept of CNN. </p>
-							<img class="img-responsive" src="images/AI-02.png" alt="Concept of CNN">
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Aim of Project - ResNet50</h2>
+							<p>Among many Convolutional Neural Networks, Residual Network
+								(ResNet) has been used as the base model for most models that have
+								achieved high recognition accuracy in recent studies. The aim of
+								the project is to train an image classification model for plant diseases
+								with plant leave images using ResNet to prototype a mobile app. The
+								challenge is to develop a practical classifier that can deliver high
+								classification accuracy in recognition of 26 different diseases on the
+								image dataset. The figure below shows the configuration of ResNet50.  </p>
+							<img class="img-responsive" src="images/IC-01.png" alt="Concept of ResNet50">
 							<p font style="font-size:10px"> Deshpande, A., 2016. A Beginner's Guide To Understanding Convolutional Neural
 								Networks. [online] Engineering at Forward | UCLA CS ‘19. Available at:
 								&lt;https://adeshpande3.github.io/A-Beginner%27s-Guide-To-UnderstandingConvolutional-Neural-Networks/&gt; [Accessed 20 June 2020].</p>
 							<br>
 							<hr>
-							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">single shot multibox method</h2>
-							<p>The pre-trained model trained based on the Common Object in Context (COCO) dataset was used to reduce the total training time. 
-								The main training was conducted by TensorFlow framework using image data. 
-								The electronic components were classified in ten classes and more than 2,000 images were used as shown below.
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Method - Plantvillage Dataset</h2>
+							<p>The PlantVillage dataset is used for training the ResNet50. It includes
+								26 diseases and 12 healthy classes on 14 crops. Dataset images for each disease class are bulked up by Image
+								Rotation method. 1,000 images for each class are
+								randomly selected, then these are divided into 800 and 200 images
+								for the Training and the Testing, respectively.
 							</p>
-							<img class="img-responsive" src="images/AI-03.png" alt="Concept of Single Shot Multibox Method">
+							<img class="img-responsive" src="images/IC-02.png" alt="Plantvillage Dataset Contents">
 							<p font style="font-size:10px"> Y. Li, W. Hu, H. Dong, and X. Zhang, “Building Damage Detection 
 								from PostEvent Aerial Imagery Using Single Shot Multibox Detector,” <i>Applied Sciences</i>,
 								vol. 9, no. 6, p. 1128, 2019</p>
-							<img class="img-responsive" src="images/AI-04.png" alt="Number of Images Gathered for Each Class">
+								<img class="img-responsive" src="images/IC-03.png" alt="Data Augmentation">
 							<br>
 							<hr>
-							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Image Augmentation</h2>
-							<p>Image augmentations are performed in the training for each image of the data set. 
-								This makes randomly some changes on the input images, such as rotating, resizing, distorting color, 
-								and adjusting brightness and contrast. 
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Overall Accuracy</h2>
+							<p>An overall accuracy is <b>99.5%</b>, and a 100% accuracy is achieved for <b>22 classes</b>.
 							</p>
-							<img class="img-responsive" src="images/AI-05.png" alt="Example of Image Augmentation">
+							<img class="img-responsive" src="images/IC-04.png" alt="Overall Accuracy">
 							<br>
 							<hr>
-							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Detection Accuracy Results (100%)</h2>
-							<p>Detection accuracy can be visualized by the webcam inference and be measured by a ratio of the number of 
-								objects correctly detected to the number of objects expected. Since it depends on the object size, 
-								100% detection can be achieved by bringing the webcam closer to the circuit board.
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Implemented on Mobile Application</h2>
+							<p>The trained model with a 99.5% accuracy has been implemented on iPhone 7 Plus using MATLAB Mobile .
 							</p>
-							<img class="img-responsive" src="images/AI-06.png" alt="Onboard Webcam Inference">
-							<img class="img-responsive" src="images/AI-07.png" alt="Offboard Webcam Inference">
+							<img class="img-responsive" src="images/IC-05.png" alt="Onboard Webcam Inference">
+					
 							<br>
 							<hr>
-							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Training Accuracy Results (83.5%)</h2>
-							<p>Training accuracy can be visualized by the TensorFlow evaluation script with some sample images. 
-								The accuracy value can be calculated as the Intersection of Union (IoU), 
-								which is a ratio of an over-rapped area between the detected and expected bounding boxes to the area of union between them. 
-								In short, the more over-rapped area and less area of union, the higher detection accuracy.
-							</p>
-							<img class="img-responsive" src="images/AI-08.png" alt="Webcam Inference">
-							<img class="img-responsive" src="images/AI-09.png" alt="Webcam Inference">
-							<img class="img-responsive" src="images/AI-10.png" alt="Webcam Inference">
-							
-							<br>
-							<hr>
-							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Promo Movie</h2>
-							<p>Here is the webcam inference screen detecting some actual components on the circuit boards.</p>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Demonstration Movie</h2>
+							<p>Here is the demonstration with the trained model implemented as a mobile app on a smarphone.</p>
 							<iframe allowfullscreen="allowfullscreen" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="394.27" height="221.5" type="text/html" 
-							src="https://www.youtube.com/embed/2EidKjRMz6k?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+							src="https://www.youtube.com/embed/24t9N5LWP6E?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
 							<div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode.com/es/</a></small></div>
 							<div><small><a href="http://tr3ndygirl.com/">ultimatewebtraffic</a></small></div></iframe>
 							<hr>
